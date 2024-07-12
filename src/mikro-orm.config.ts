@@ -1,7 +1,7 @@
 import { Options } from "@mikro-orm/core";
 import { PostgreSqlDriver } from "@mikro-orm/postgresql";
 import { Migrator } from "@mikro-orm/migrations";
-import { envs } from "./src/core/config/envs";
+import { envs } from "./core/config/envs";
 
 
 const db_c = {
