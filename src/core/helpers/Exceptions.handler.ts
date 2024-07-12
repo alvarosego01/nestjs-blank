@@ -1,7 +1,7 @@
-import { HttpStatus, Injectable } from "@nestjs/common";
-import { RpcException } from "@nestjs/microservices";
-import { _Response_I } from "@tesis-project/dev-globals/dist/interfaces";
 
+import { HttpStatus } from "@nestjs/common";
+import { RpcException } from "@nestjs/microservices";
+import { _Response_I } from "@tesis-project/dev-globals/dist/core/interfaces";
 
 
 export class ExceptionsHandler {
