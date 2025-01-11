@@ -1,8 +1,9 @@
 
 import { HttpStatus } from "@nestjs/common";
 import { RpcException } from "@nestjs/microservices";
-import { _Response_I } from "@tesis-project/dev-globals/dist/core/interfaces";
+// import { _Response_I } from "@tesis-project/dev-globals/dist/core/interfaces";
 
+interface _Response_I {}
 
 export class ExceptionsHandler {
 

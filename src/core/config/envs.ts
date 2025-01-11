@@ -29,7 +29,7 @@ interface EnvVars_I {
 const envsSchema = joi.object({
     PORT: joi.number().required(),
 
-    NATS_SERVERS: joi.array().items(joi.string()),
+    // NATS_SERVERS: joi.array().items(joi.string()),
 
 
     NODE_ENV: joi.string().valid(NodeEnv.DEVELOPMENT, NodeEnv.STAGING, NodeEnv.PRODUCTION).required(),
@@ -49,7 +49,7 @@ const {
     value
 } = envsSchema.validate({
     ...process.env,
-    NATS_SERVERS: process.env.NATS_SERVERS?.split(',')
+    // NATS_SERVERS: process.env.NATS_SERVERS?.split(',')
 });
 
 if (error) {
@@ -63,7 +63,7 @@ const envVars: EnvVars_I = value;
 export const envs = {
     port: envVars.PORT,
 
-    natsServers: envVars.NATS_SERVERS,
+    // natsServers: envVars.NATS_SERVERS,
 
     nodeEnv: envVars.NODE_ENV,
 
